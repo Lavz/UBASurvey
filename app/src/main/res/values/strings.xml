@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">UBASurvey</string>
+    <string name="village_prompt">Choose a category</string>
+    <string-array name="village_option">
+        <item>Anjur</item>
+        <item>Pattaravakkam</item>
+        <item>Thenmelpakkam</item>
+        <item>Orathur</item>
+        <item>Nattarasampattu</item>
+
+    </string-array>
+
+    <string name="district_prompt">Choose a category</string>
+    <string-array name="district_option">
+        <item>Kancheepuram</item>
+    </string-array>
+
+    <string name="ward_number_prompt">Choose a category</string>
+    <string-array name="ward_number_option">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+
+    </string-array>
+
+    <string name="GramPanachayat_prompt">Choose a category</string>
+    <string-array name="GramPanachayat_option">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+
+
+    </string-array>
+
+    <string name="Block_prompt">Choose a category</string>
+    <string-array name="Block_option">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+
+
+    </string-array>
+
+    <string name="State_prompt">Choose a category</string>
+    <string-array name="State_option">
+        <item>TN</item>
+    </string-array>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_others">Others</string>
+
+
+    <string name="radio_category_gen">Gen</string>
+    <string name="radio_category_sc">SC</string>
+    <string name="radio_category_st">ST</string>
+    <string name="radio_category_obc">OBC</string>
+
+
+    <string name="radio_poverty_status_apl">APL</string>
+    <string name="radio_poverty_status_bpl">BPL</string>
+
+    <string name="radio_ownhouse_yes">YES</string>
+    <string name="radio_ownhouse_no">NO</string>
+
+
+    <string name="radio_typeHouse_kutcha">Kutcha</string>
+    <string name="radio_typeHouse_semipucca">Semi Pucca</string>
+    <string name="radio_typeHouse_pucca">Pucca</string>
+    <string name="radio_typeHouse_homeless">Homeless</string>
+
+
+    <string name="radio_toilet_private">Private</string>
+    <string name="radio_toilet_community">Community</string>
+    <string name="radio_toilet_opendefecation">Open Defecation</string>
+
+
+    <string name="radio_drainage_Covered">Covered</string>
+    <string name="radio_drainage_Open">Open</string>
+    <string name="radio_drainage_None">None</string>
+
+
+    <string name="radio_waste_DoorStep">Door Step</string>
+    <string name="radio_waste_CommonPoint">Common Point </string>
+    <string name="radio_waste_NoCollectionSystem">No Collection System</string>
+
+
+    <string name="radio_compost_Individual">Individual</string>
+    <string name="radio_compost_Group">Group</string>
+    <string name="radio_compost_None">None</string>
+
+    <string name="radio_biogas_Individual">Individual</string>
+    <string name="radio_biogas_Group">Group</string>
+    <string name="radio_biogas_Community">Community</string>
+    <string name="radio_biogas_None">None</string>
+
+
+</resources>
