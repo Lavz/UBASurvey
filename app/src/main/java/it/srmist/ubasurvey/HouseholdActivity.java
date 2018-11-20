@@ -53,7 +53,7 @@ public class HouseholdActivity extends AppCompatActivity {
 
                 toast.show();
 
-                Intent i = new Intent(HouseholdActivity.this, GovernmentSchemeActivity.class);
+                Intent i = new Intent(HouseholdActivity.this, FamilyMembersInfo.class);
                 // Starts TargetActivity
                 startActivity(i);
             }

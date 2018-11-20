@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">UBASurvey</string>
+
+    <!-- Basic Information Screen Strings -->
     <string name="village_prompt">Choose a category</string>
     <string-array name="village_option">
         <item>Anjur</item>
@@ -51,6 +53,8 @@
     <string-array name="State_option">
         <item>TN</item>
     </string-array>
+
+    <!-- Household Screen Strings -->
     <string name="radio_male">Male</string>
     <string name="radio_female">Female</string>
     <string name="radio_others">Others</string>
@@ -99,5 +103,72 @@
     <string name="radio_biogas_Community">Community</string>
     <string name="radio_biogas_None">None</string>
 
+    <!-- Family Member Screen Strings -->
+
+    <string name="radio_maritalStatus_NotMarried">NotMarried</string>
+    <string name="radio_maritalStatus_Married">Married</string>
+    <string name="radio_maritalStatus_Widowed">Widowed</string>
+    <string name="radio_maritalStatus_Divorced_Separated">Divorced/Separated</string>
+
+    <string name="levelOfEducation">Select</string>
+    <string-array name="levelOfEducation_option">
+        <item>Not Literate</item>
+        <item>Literate</item>
+        <item>Completed Class 5</item>
+        <item> Class 8th</item>
+        <item> Class 10th</item>
+        <item> Class 12th</item>
+        <item>ITI Diploma-</item>
+        <item>Graduate</item>
+        <item>Post Graduate/Professional</item>
+    </string-array>
+
+
+    <string name="awcSchoolCollege">Select</string>
+    <string-array name="awcSchoolCollege_option">
+        <item>Going to AWC</item>
+        <item>School</item>
+        <item>College</item>
+        <item>Not Going</item>
+        <item>Not Applicable</item>
+
+    </string-array>
+
+    <string name="radio_aadhaarCard_yes">YES</string>
+    <string name="radio_aadhaarCard_no">NO</string>
+
+    <string name="radio_BankAccount_yes">YES</string>
+    <string name="radio_BankAccount_no">NO</string>
+
+    <string name="radio_computerLiterate_yes">YES</string>
+    <string name="radio_computerLiterate_no">NO</string>
+
+    <string name="socialSecurityPension">Select</string>
+    <string-array name="socialSecurityPension_option">
+        <item>No Pension</item>
+        <item>Old Age Pension</item>
+        <item>Widow Pension</item>
+        <item>Disability Pension</item>
+        <item>Other Pension</item>
+    </string-array>
+
+    <string name="radio_mnregajobcard_yes">YES</string>
+    <string name="radio_mnregajobcard_no">NO</string>
+
+    <string name="occupationsCode">Select</string>
+    <string-array name="occupationsCode_option">
+        <item>Farming on own Land</item>
+        <item>Sharecropping /Farming Leased Land</item>
+        <item>Animal Husbandry</item>
+        <item>Pisci-culture/Poultry</item>
+        <item>Fishing</item>
+        <item>Skilled Wage Worker</item>
+        <item>Unskilled Wage Worker</item>
+        <item>Salaried Employment in Government</item>
+        <item>Salaried Employment in Private Sector</item>
+        <item>Weaving</item>
+        <item>Other Artisan (mention)</item>
+        <item>Other Trade and Business</item>
+    </string-array>
 
 </resources>
