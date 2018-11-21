@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FamilyMembersInfo extends AppCompatActivity {
+public class MigrationStatusActivity extends AppCompatActivity {
 
-    Button familyMember_btn_submit_Handler;
+    Button mirgrate_btn_submit_Handler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_family_members_info);
+        setContentView(R.layout.activity_migration_status);
 
-
-        familyMember_btn_submit_Handler= (findViewById(R.id.familyMember_btn_submit));
-        familyMember_btn_submit_Handler.setOnClickListener(new View.OnClickListener() {
+        mirgrate_btn_submit_Handler= (findViewById(R.id.mirgrate_btn_submit));
+        mirgrate_btn_submit_Handler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(FamilyMembersInfo.this, MigrationStatusActivity.class);
+                Intent i = new Intent(MigrationStatusActivity.this, GovernmentSchemeActivity.class);
                 // Starts TargetActivity
                 startActivity(i);
             }

@@ -190,6 +190,10 @@
 
     <!-- Family Member Screen Strings -->
 
+    <!--Migration Status Screen Strings -->
+
+    <string name="radio_migrateForWork_yes">YES</string>
+    <string name="radio_migrateForWork_no">NO</string>
 
 
 </resources>

@@ -19,7 +19,15 @@
         <activity android:name=".HouseholdActivity" />
         <activity android:name=".GovernmentSchemeActivity" />
         <activity android:name=".FamilyMembersInfo" />
-        <activity android:name=".RespondentProfileActivity"></activity>
+        <activity android:name=".RespondentProfileActivity" />
+        <activity android:name=".MigrationStatusActivity" />
+        <activity android:name=".SourceWaterActivity" />
+        <activity android:name=".SourceEnergyPower" />
+        <activity android:name=".LandholdingInfoActivity" />
+        <activity android:name=".AgricultureInputsActivity" />
+        <activity android:name=".AgricultureProdcueActivity" />
+        <activity android:name=".LivestockNumbersActivity" />
+        <activity android:name=".MajorProblemsActivity"></activity>
     </application>
 
 </manifest>
