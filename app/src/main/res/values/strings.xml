@@ -171,4 +171,25 @@
         <item>Other Trade and Business</item>
     </string-array>
 
+    <!-- Respondent`s Profile String-->
+
+    <string name="radio_respondent_male">Male</string>
+    <string name="radio_respondent_female">Female</string>
+    <string name="radio_respondent_others">Others</string>
+
+    <string name="identityCardType_prompt">Select</string>
+    <string-array name="identityCardTypeSpinner_option">
+        <item>Select</item>
+        <item>Voters Id</item>
+        <item>Driving License</item>
+        <item>Aaadhar Card</item>
+        <item>Pan Card</item>
+
+    </string-array>
+
+
+    <!-- Family Member Screen Strings -->
+
+
+
 </resources>

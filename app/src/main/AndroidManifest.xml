@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".HouseholdActivity" />
         <activity android:name=".GovernmentSchemeActivity" />
-        <activity android:name=".FamilyMembersInfo"></activity>
+        <activity android:name=".FamilyMembersInfo" />
+        <activity android:name=".RespondentProfileActivity"></activity>
     </application>
 
 </manifest>

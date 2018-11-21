@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -17,8 +18,9 @@ public class BasicInfoActivity extends AppCompatActivity {
     Button btn_submit;
     HashMap<String,String> villageHashMap;
     HashMap<String,String> DistrictHashMap;
-
+    EditText householdIDHandler;
     String villageSpinnerValue, districtSpinnerValue,blockSpinnerValue,wardNoSpinnerValue,gramPanchayatSpinnerValue, stateSpinnerValue;
+    String householdIdValue;
     Spinner villageSpinnerHandler, districtSpinnerHandler,blockSpinnerHandler,wardNoSpinnerHandler,gramPanchayatSpinnerHandler, stateSpinnerHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class BasicInfoActivity extends AppCompatActivity {
         gramPanchayatSpinnerHandler = findViewById(R.id.GramPanachayatSpinner);
         wardNoSpinnerHandler = findViewById(R.id.wardNoSpinner);
         stateSpinnerHandler = findViewById(R.id.StateSpinner);
+        householdIDHandler = findViewById(R.id.householdID);
 
         btn_submit.setOnClickListener(new View.OnClickListener() {
 
@@ -51,7 +54,7 @@ public class BasicInfoActivity extends AppCompatActivity {
                 wardNoSpinnerValue = wardNoSpinnerHandler.getSelectedItem().toString();
                 gramPanchayatSpinnerValue = gramPanchayatSpinnerHandler.getSelectedItem().toString();
                 stateSpinnerValue = stateSpinnerHandler.getSelectedItem().toString();
-
+                householdIdValue =String.valueOf(householdIDHandler.getText());
                 String villageCode=villageHashMap.get(villageSpinnerValue);
                 String districtCode=DistrictHashMap.get(districtSpinnerValue);
                /* Toast toast = Toast.makeText(getApplicationContext(),
@@ -69,7 +72,7 @@ public class BasicInfoActivity extends AppCompatActivity {
                 i.putExtra("block", blockSpinnerValue);
                 i.putExtra("wardno", wardNoSpinnerValue);
                 i.putExtra("gramPanchayat", gramPanchayatSpinnerValue);
-
+                i.putExtra("householdId", householdIdValue);
 
                 // Starts TargetActivity
                 startActivity(i);
