@@ -4,6 +4,7 @@
     <!-- Basic Information Screen Strings -->
     <string name="village_prompt">Choose a category</string>
     <string-array name="village_option">
+        <item>Select Value</item>
         <item>Anjur</item>
         <item>Pattaravakkam</item>
         <item>Thenmelpakkam</item>
@@ -19,6 +20,7 @@
 
     <string name="ward_number_prompt">Choose a category</string>
     <string-array name="ward_number_option">
+        <item>Select Value</item>
         <item>01</item>
         <item>02</item>
         <item>03</item>
@@ -42,6 +44,7 @@
 
     <string name="Block_prompt">Choose a category</string>
     <string-array name="Block_option">
+        <item>Select Value</item>
         <item>01</item>
         <item>02</item>
         <item>03</item>
@@ -112,6 +115,7 @@
 
     <string name="levelOfEducation">Select</string>
     <string-array name="levelOfEducation_option">
+        <item>Select Value</item>
         <item>Not Literate</item>
         <item>Literate</item>
         <item>Completed Class 5</item>
@@ -126,6 +130,7 @@
 
     <string name="awcSchoolCollege">Select</string>
     <string-array name="awcSchoolCollege_option">
+        <item>Select Value</item>
         <item>Going to AWC</item>
         <item>School</item>
         <item>College</item>
@@ -145,6 +150,7 @@
 
     <string name="socialSecurityPension">Select</string>
     <string-array name="socialSecurityPension_option">
+        <item>Select Value</item>
         <item>No Pension</item>
         <item>Old Age Pension</item>
         <item>Widow Pension</item>
@@ -157,6 +163,7 @@
 
     <string name="occupationsCode">Select</string>
     <string-array name="occupationsCode_option">
+        <item>Select Value</item>
         <item>Farming on own Land</item>
         <item>Sharecropping /Farming Leased Land</item>
         <item>Animal Husbandry</item>
@@ -179,7 +186,7 @@
 
     <string name="identityCardType_prompt">Select</string>
     <string-array name="identityCardTypeSpinner_option">
-        <item>Select</item>
+        <item>Select Value</item>
         <item>Voters Id</item>
         <item>Driving License</item>
         <item>Aaadhar Card</item>
@@ -194,6 +201,10 @@
 
     <string name="radio_migrateForWork_yes">YES</string>
     <string name="radio_migrateForWork_no">NO</string>
+
+    <string name="radio_pipedWaterAtHome_yes">YES</string>
+    <string name="radio_pipedWaterAtHome_no">NO</string>
+
 
 
 </resources>

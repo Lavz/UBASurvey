@@ -385,13 +385,14 @@
 
     </TableRow>
         <TableRow android:gravity="center" android:layout_marginTop="20dip" >
-
-            <Button
-                android:text="Next"
-                android:clickable="true"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/governmentScheme_btn_submit"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/save" android:layout_span="2" ></Button>
+                android:padding="10dp"
+                android:background="@color/button_bg"
+                android:textColor="@color/button_text_color"
+                android:text="Next"/>
         </TableRow>
 
 

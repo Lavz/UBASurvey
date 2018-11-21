@@ -63,6 +63,8 @@ public class BasicInfoActivity extends AppCompatActivity {
 
                 toast.show();*/
 
+
+
                 // Explicit Intent by specifying its class name
                 Intent i = new Intent(BasicInfoActivity.this, HouseholdActivity.class);
                 i.putExtra("ubaid", stateSpinnerValue+districtCode+villageCode);
