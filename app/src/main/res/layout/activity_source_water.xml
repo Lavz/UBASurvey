@@ -163,22 +163,43 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Choose Village:"
+                            android:text="Community Water Tap"
                             android:textColor="@android:color/darker_gray" />
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_margin="10dp"
                             android:background="#000000" />
-                        <Spinner
-                            android:layout_gravity="center"
-                            android:padding="10dp"
-                            android:id="@+id/villageSpinner"
-                            android:prompt="@string/village_prompt"
-                            android:entries="@array/village_option"
+                        <RadioGroup
+                            android:id="@+id/radio_communityWaterTap"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            />
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_communityWaterTap_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_communityWaterTap_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_communityWaterTap_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_communityWaterTap_no" />
+                        </RadioGroup>
+                        <EditText
+                            android:id="@+id/communityWaterTapDistance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:hint="Piped Water At Home in Distance"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -211,27 +232,80 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Choose Ward No:"
+                            android:text="Hand Pump "
                             android:textColor="@android:color/darker_gray" />
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_margin="10dp"
                             android:background="#000000" />
-                        <Spinner
-                            android:layout_gravity="center"
-                            android:id="@+id/wardNoSpinner"
-                            android:prompt="@string/ward_number_prompt"
-                            android:entries="@array/ward_number_option"
+
+                        <RadioGroup
+                            android:id="@+id/radio_handpump_yesno"
                             android:layout_width="wrap_content"
-                            android:padding="10dp"
                             android:layout_height="wrap_content"
-                            />
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_handpump_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_handpump_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_handpump_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_handpump__no" />
+                        </RadioGroup>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+                        <RadioGroup
+                            android:id="@+id/radio_handpump"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_handpump_public"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_handpump_public" />
+
+                            <RadioButton
+                                android:id="@+id/radio_handpump_private"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_handpump_private" />
+                        </RadioGroup>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+                        <EditText
+                            android:id="@+id/handpumpDistance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:hint="Hand Pump in distance"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -260,26 +334,80 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Choose Gram Panachayat:"
+                            android:text="Open Well "
                             android:textColor="@android:color/darker_gray" />
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_margin="10dp"
                             android:background="#000000" />
-                        <Spinner
-                            android:layout_gravity="center"
-                            android:id="@+id/GramPanachayatSpinner"
-                            android:prompt="@string/GramPanachayat_prompt"
-                            android:entries="@array/GramPanachayat_option"
+
+                        <RadioGroup
+                            android:id="@+id/radio_openwell_yesno"
                             android:layout_width="wrap_content"
-                            android:padding="10dp"
                             android:layout_height="wrap_content"
-                            />
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_openwell_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_handpump_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_openwell_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_handpump__no" />
+                        </RadioGroup>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+                        <RadioGroup
+                            android:id="@+id/radio_openwell"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_openwell_public"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_handpump_public" />
+
+                            <RadioButton
+                                android:id="@+id/radio_openwell_private"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_handpump_private" />
+                        </RadioGroup>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+                        <EditText
+                            android:id="@+id/openwellDistance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:hint="Open Well in distance"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -306,7 +434,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Choose Block:"
+                            android:text="Mode of Water Storage"
                             android:textColor="@android:color/darker_gray" />
                         <View
                             android:layout_width="match_parent"
@@ -314,69 +442,31 @@
                             android:layout_margin="10dp"
                             android:background="#000000" />
 
-                        <Spinner
-                            android:id="@+id/BlockSpinner"
-                            android:prompt="@string/Block_prompt"
-                            android:entries="@array/Block_option"
+                        <RadioGroup
+                            android:id="@+id/radio_modewatersource"
                             android:layout_width="wrap_content"
-                            android:padding="10dp"
-                            android:layout_gravity="center"
                             android:layout_height="wrap_content"
-                            />
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_modewatersource_community"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_modewatersource_community" />
+
+                            <RadioButton
+                                android:id="@+id/radio_modewatersource_individual"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_modewatersource_individual" />
+                        </RadioGroup>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-
-                <android.support.v7.widget.CardView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="8dp"
-                    android:elevation="6dp"
-                    app:cardCornerRadius="8dp"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Choose State:"
-                            android:textColor="@android:color/darker_gray" />
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="#000000" />
-
-                        <Spinner
-                            android:layout_gravity="center"
-                            android:id="@+id/StateSpinner"
-                            android:prompt="@string/State_prompt"
-                            android:entries="@array/State_option"
-                            android:layout_width="wrap_content"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -401,10 +491,10 @@
                         android:gravity="center"
                         android:orientation="vertical">
                         <EditText
-                            android:id="@+id/householdID"
+                            android:id="@+id/othersourceofWaterText"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Household ID"
+                            android:hint="Any other source (mention)"
                             android:inputType="textCapWords"
                             android:singleLine="true"
                             android:padding="20dp"
@@ -443,7 +533,7 @@
                             android:padding="10dp"
                             android:background="@color/button_bg"
                             android:textColor="@color/button_text_color"
-                            android:text="Submit"/>
+                            android:text="Next"/>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 

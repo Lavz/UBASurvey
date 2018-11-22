@@ -1,9 +1,528 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgricultureInputsActivity">
+    tools:context="it.srmist.ubasurvey.AgricultureInputsActivity"
+    android:background="#fcfcfc">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/displayLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Agricultural Inputs"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="20dip"/>
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:layout_margin="2dp"
+                             android:background="#000000" />-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/chemicalFertilizersText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Do you use Chemical Fertilisers"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_chemical_fertilizers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_fertilizers_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_chemical_fertilizers_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_fertilizers_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_chemical_fertilizers_no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/fertilizerValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Fertilizer in Kg/Acre"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/chemicalInsecticidesText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Do you use Chemical Insecticides"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_chemical_insecticides"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_insecticides_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_chemical_insecticides_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_insecticides_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_chemical_insecticides_no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/insecticidesValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Insecticides in Kg/Acre"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/chemicalWeedicideText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Do you use Chemical Weedicide"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_chemical_weedicide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_weedicide_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_chemical_weedicide_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_weedicide_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_chemical_weedicide_no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/weedicideValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Weedicides in Kg/Acre"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/organicManuresText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Do You use organic Manures"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_chemical_organicmanure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_organicmanure_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_chemical_organicmanure_yes" />
+
+                            <RadioButton
+                                android:id="@+id/radio_chemical_organicmanure_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_chemical_organicmanure_no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/organicManuresValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Weedicides in Kg/Acre"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/irrigationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Irrigation"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <Spinner
+                            android:id="@+id/irrigationSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:entries="@array/irrigationSpinner_option"
+                            android:prompt="@string/irrigation_prompt"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/irrigationSystemText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Irrigation"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <Spinner
+                            android:id="@+id/irrigationSystemSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:entries="@array/irrigationSystemSpinner_option"
+                            android:prompt="@string/irrigationSytem_prompt"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/agricInputs_btn_submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@color/button_bg"
+                            android:textColor="@color/button_text_color"
+                            android:text="Next"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

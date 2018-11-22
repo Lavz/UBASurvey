@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class GovernmentSchemeActivity extends AppCompatActivity {
-Button governmentScheme_btn_submit_Handler;
+
+    Button governmentScheme_btn_submit_Handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,9 +11,9 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class SourceWaterActivity extends AppCompatActivity {
-    RadioButton radio_pipedWaterAtHome_yes,radio_pipedWaterAtHome_no;
+    //RadioButton radio_pipedWaterAtHome_yes,radio_pipedWaterAtHome_no;
     Button sourceWater_btn_submit_Handler;
-    EditText pipedWaterDistance;
+    //EditText pipedWaterDistance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ public class SourceWaterActivity extends AppCompatActivity {
 
 
 
-        class Radio_check implements  CompoundButton.OnCheckedChangeListener
+       /* class Radio_check implements  CompoundButton.OnCheckedChangeListener
         {
 
             @Override
@@ -39,17 +39,17 @@ public class SourceWaterActivity extends AppCompatActivity {
         }
 
         radio_pipedWaterAtHome_yes.setOnCheckedChangeListener(new Radio_check());
-        radio_pipedWaterAtHome_no.setOnCheckedChangeListener(new Radio_check());
+        radio_pipedWaterAtHome_no.setOnCheckedChangeListener(new Radio_check());*/
 
 
-        /*sourceWater_btn_submit_Handler= (findViewById(R.id.sourceWater_btn_submit));
+        sourceWater_btn_submit_Handler= (findViewById(R.id.sourceWater_btn_submit));
         sourceWater_btn_submit_Handler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SourceWaterActivity.this, SourceEnergyPower.class);
+                Intent i = new Intent(SourceWaterActivity.this, AgricultureInputsActivity.class);
                 // Starts TargetActivity
                 startActivity(i);
             }
-        });*/
+        });
     }
 }

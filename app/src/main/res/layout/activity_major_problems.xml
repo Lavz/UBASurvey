@@ -1,9 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MajorProblemsActivity">
+    tools:context="it.srmist.ubasurvey.MajorProblemsActivity"
+    android:background="#fcfcfc">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/displayLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Major problems in village, if any (Top 3)"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="24dip"/>
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:layout_margin="2dp"
+                             android:background="#000000" />-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/problemName1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Problems #1"
+                            android:inputType="textMultiLine"
+
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/suggestionsText1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Possible Suggestions by villagers"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/problemName2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Problems #2"
+                            android:inputType="textMultiLine"
+
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/suggestionsText2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Possible Suggestions by villagers"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/problemName3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Problems #3"
+                            android:inputType="textMultiLine"
+
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/suggestionsText3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Possible Suggestions by villagers"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/problem_btn_submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@color/button_bg"
+                            android:textColor="@color/button_text_color"
+                            android:text="Submit"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

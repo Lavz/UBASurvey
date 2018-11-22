@@ -202,9 +202,72 @@
     <string name="radio_migrateForWork_yes">YES</string>
     <string name="radio_migrateForWork_no">NO</string>
 
+
+
+
+ <!-- Source of Water Screen Strings -->
     <string name="radio_pipedWaterAtHome_yes">YES</string>
     <string name="radio_pipedWaterAtHome_no">NO</string>
 
 
+    <string name="radio_communityWaterTap_yes">YES</string>
+    <string name="radio_communityWaterTap_no">NO</string>
 
+    <string name="radio_handpump_public">Public</string>
+    <string name="radio_handpump_private">Private</string>
+
+
+    <string name="radio_handpump_yes">YES</string>
+    <string name="radio_handpump__no">NO</string>
+
+    <string name="radio_openwell_public">Public</string>
+    <string name="radio_openwell_private">Private</string>
+
+
+    <string name="radio_openwell_yes">YES</string>
+    <string name="radio_openwell_no">NO</string>
+
+    <string name="radio_modewatersource_community">Public</string>
+    <string name="radio_modewatersource_individual">Private</string>
+
+
+    <string name="radio_livestock_kutcha">Kutcha</string>
+    <string name="radio_livestock_pucca">Pucca</string>
+    <string name="radio__livestock_open">Open</string>
+
+    <!-- Agricultural Inputs Screen Strings-->
+
+
+    <string name="radio_chemical_fertilizers_yes">YES</string>
+    <string name="radio_chemical_fertilizers_no">NO</string>
+
+    <string name="radio_chemical_insecticides_yes">YES</string>
+    <string name="radio_chemical_insecticides_no">NO</string>
+
+    <string name="radio_chemical_weedicide_yes">YES</string>
+    <string name="radio_chemical_weedicide_no">NO</string>
+
+    <string name="radio_chemical_organicmanure_yes">YES</string>
+    <string name="radio_chemical_organicmanure_no">NO</string>
+
+    <string name="irrigation_prompt">Select</string>
+    <string-array name="irrigationSpinner_option">
+    <item>Select Value</item>
+    <item>Canal</item>
+    <item>Borewell</item>
+    <item>Tank</item>
+    <item>River</item>
+        <item>None</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="irrigationSytem_prompt">Select</string>
+    <string-array name="irrigationSystemSpinner_option">
+        <item>Select Value</item>
+        <item>Drip</item>
+        <item>Sprinkler</item>
+        <item>Flooding</item>
+        <item>None</item>
+
+    </string-array>
 </resources>

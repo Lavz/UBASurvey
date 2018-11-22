@@ -15,13 +15,13 @@ public class MigrationStatusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_migration_status);
 
-        mirgrate_btn_submit_Handler= (findViewById(R.id.mirgrate_btn_submit));
+        mirgrate_btn_submit_Handler= findViewById(R.id.mirgrate_btn_submit);
         mirgrate_btn_submit_Handler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MigrationStatusActivity.this, GovernmentSchemeActivity.class);
+                Intent is = new Intent(MigrationStatusActivity.this, GovernmentSchemeActivity.class);
                 // Starts TargetActivity
-                startActivity(i);
+                startActivity(is);
             }
         });
     }

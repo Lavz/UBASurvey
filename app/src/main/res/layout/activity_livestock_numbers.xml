@@ -1,9 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LivestockNumbersActivity">
+    tools:context="it.srmist.ubasurvey.LivestockNumbersActivity"
+    android:background="#fcfcfc">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/displayLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Livestock Numbers (in numbers)"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="20dip"/>
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:layout_margin="2dp"
+                             android:background="#000000" />-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/cowsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Cows"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/buffaloText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Buffalo"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/goatSheepText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Goat/Sheep"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/calvesText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Calves"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/bullocksText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Bullocks"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/poultryDucksText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Poultry/Ducks"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/othersMentionText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Others (Mention)"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/typeHouseText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Shelter for Livestock"
+                            android:textColor="@android:color/darker_gray" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#000000" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_livestock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_livestock_kutcha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_livestock_kutcha" />
+
+                            <RadioButton
+                                android:id="@+id/radio_livestock_pucca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio_livestock_pucca" />
+
+
+
+                            <RadioButton
+                                android:id="@+id/radio__livestock_open"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radio__livestock_open" />
+
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/avgDailyMilkProductionText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Average Production of Milk in litres"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/animalwastecowdoungText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Animal Waste /Cow Dung in Kg"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/livestock_btn_submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@color/button_bg"
+                            android:textColor="@color/button_text_color"
+                            android:text="Next"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,9 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgricultureProdcueActivity">
+    tools:context="it.srmist.ubasurvey.AgricultureProdcueActivity"
+    android:background="#fcfcfc">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/displayLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Agricultural Produce in a normal year (Top 5)"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="20dip"/>
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:layout_margin="2dp"
+                             android:background="#000000" />-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView android:id="@+id/displyInstructionLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Instructions"
+                            android:textStyle="italic"
+                            android:gravity="center"
+                            android:textSize="18dip"/>
+
+                        <TextView android:id="@+id/displyInfoLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:text="Area under the Crop in Previous Year(Acre),
+     Productivity (in Quintals per Acre)"
+                            android:textStyle="italic"
+                            android:gravity="center"
+                            android:textSize="15dip"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/cropNametext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Crop"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/areaText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Area"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/yearText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Yrs"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+                        <EditText
+                            android:id="@+id/productivityText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Productivity"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:padding="20dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="8dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/agricProduce_btn_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="170dp"
+                            android:background="@color/button_bg"
+                            android:textColor="@color/button_text_color"
+                            android:text="Add"/>
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/agricProduce_btn_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@color/button_bg"
+                            android:textColor="@color/button_text_color"
+                            android:text="Next"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
